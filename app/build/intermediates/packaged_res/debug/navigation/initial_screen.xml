@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/initial_screen"
+    app:startDestination="@id/splashScreenActivity">
+
+    <activity
+        android:id="@+id/splashScreenActivity"
+        android:name="com.greenusys.vehicledealerapp.SplashScreenActivity"
+        android:label="activity_splash_screen"
+        tools:layout="@layout/activity_splash_screen">
+
+        <action
+            android:id="@+id/action_splashScreenActivity_to_loginActivity"
+            app:destination="@id/loginActivity"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+
+    </activity>
+
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.greenusys.vehicledealerapp.activities.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login">
+
+        <action
+            android:id="@+id/action_loginActivity_to_verificationActivity"
+            app:destination="@id/verificationActivity"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </activity>
+
+    <activity
+        android:id="@+id/verificationActivity"
+        android:name="com.greenusys.vehicledealerapp.activities.VerificationActivity"
+        android:label="activity_verification"
+        tools:layout="@layout/activity_verification">
+
+        <action
+            android:id="@+id/action_verificationActivity_to_activityProfileFormDealer"
+            app:destination="@id/activityProfileFormDealer"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_verificationActivity_to_dashboardActivity"
+            app:destination="@id/dashboardActivity"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </activity>
+
+    <activity
+        android:id="@+id/activityProfileFormDealer"
+        android:name="com.greenusys.vehicledealerapp.activities.ProfileFormDealerActivity"
+        android:label="activity_dealer_profile_form"
+        tools:layout="@layout/activity_profile_form_dealer">
+
+        <action
+            android:id="@+id/action_activityProfileFormDealer_to_dashboardActivity"
+            app:destination="@id/dashboardActivity"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </activity>
+
+    <activity
+        android:id="@+id/dashboardActivity"
+        android:name="com.greenusys.vehicledealerapp.activities.DashboardActivity"
+        android:label="activity_dashboard"
+        tools:layout="@layout/activity_dashboard">
+        <action
+            android:id="@+id/action_dashboardActivity_to_addVehicleDetailsActivity"
+            app:destination="@id/addVehicleDetailsActivity"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_dashboardActivity_to_vehicleDetailsActivity"
+            app:destination="@id/vehicleDetailsActivity"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_dashboardActivity_to_userProfileActivity"
+            app:destination="@id/userProfileActivity"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </activity>
+
+    <activity
+        android:id="@+id/addVehicleDetailsActivity"
+        android:name="com.greenusys.vehicledealerapp.activities.AddVehicleDetailsActivity"
+        android:label="activity_add_vehicle_details"
+        tools:layout="@layout/activity_add_vehicle_details">
+
+        <action
+            android:id="@+id/action_addVehicleDetailsActivity_to_dashboardActivity"
+            app:destination="@id/dashboardActivity"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </activity>
+
+    <activity
+        android:id="@+id/vehicleDetailsActivity"
+        android:name="com.greenusys.vehicledealerapp.activities.VehicleDetailsActivity"
+        android:label="activity_vehicle_details"
+        tools:layout="@layout/activity_vehicle_details">
+        <action
+            android:id="@+id/action_vehicleDetailsActivity_to_dashboardActivity"
+            app:destination="@id/dashboardActivity"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </activity>
+
+    <activity
+        android:id="@+id/userProfileActivity"
+        android:name="com.greenusys.vehicledealerapp.activities.UserProfileActivity"
+        android:label="activity_user_profile"
+        tools:layout="@layout/activity_user_profile">
+
+        <action
+            android:id="@+id/action_userProfileActivity_to_dashboardActivity"
+            app:destination="@id/dashboardActivity"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </activity>
+</navigation>

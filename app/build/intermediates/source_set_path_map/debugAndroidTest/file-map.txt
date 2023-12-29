@@ -1,0 +1,7 @@
+com.greenusys.vehicledealerapp.test.app-androidTest-0 D:\GreenUsys\GreenUsys_Android\VehicleDealerApp\app\build\generated\res\resValues\androidTest\debug
+com.greenusys.vehicledealerapp.test.app-androidTest-1 D:\GreenUsys\GreenUsys_Android\VehicleDealerApp\app\build\generated\res\rs\androidTest\debug
+com.greenusys.vehicledealerapp.test.app-mergeDebugAndroidTestResources-2 D:\GreenUsys\GreenUsys_Android\VehicleDealerApp\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.greenusys.vehicledealerapp.test.app-mergeDebugAndroidTestResources-3 D:\GreenUsys\GreenUsys_Android\VehicleDealerApp\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.greenusys.vehicledealerapp.test.app-merged_res-4 D:\GreenUsys\GreenUsys_Android\VehicleDealerApp\app\build\intermediates\merged_res\debugAndroidTest
+com.greenusys.vehicledealerapp.test.app-androidTest-5 D:\GreenUsys\GreenUsys_Android\VehicleDealerApp\app\src\androidTest\res
+com.greenusys.vehicledealerapp.test.app-androidTestDebug-6 D:\GreenUsys\GreenUsys_Android\VehicleDealerApp\app\src\androidTestDebug\res
